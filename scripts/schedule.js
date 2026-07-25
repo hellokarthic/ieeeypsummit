@@ -150,7 +150,8 @@ function renderItem(item) {
 function renderSessionText(session) {
   const speaker = session.speaker ? `<span class="schedule-speaker">${session.speaker}</span>` : "";
   const continues = session.continuesNote ? `<span class="schedule-continues-tag">→ ${session.continuesNote}</span>` : "";
-  return `<span class="schedule-text">${session.text}</span>${speaker}${continues}`;
+  const link = session.link ? `<a class="schedule-session-link" href="${session.link}" target="_blank" rel="noopener">Sign up →</a>` : "";
+  return `<span class="schedule-text">${session.text}</span>${speaker}${continues}${link}`;
 }
 
 // All event times are Eastern (America/New_York); compare against Eastern "now"
