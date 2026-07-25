@@ -1,8 +1,8 @@
 const TRACKS = {
   all: { label: "All Attendees" },
-  technical: { label: "Technical Innovation & Applied AI", room: "Colloquium Room 906" },
+  technical: { label: "Technical Innovation & Applied AI", room: "Room 205" },
   careers: { label: "AI in Careers & Professional Growth", room: "Room 203" },
-  wie: { label: "Women in Engineering", room: "Room 205" }
+  wie: { label: "Women in Engineering", room: "Colloquium Room 906" }
 };
 
 const DAYS = [

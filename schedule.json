@@ -249,7 +249,7 @@
     "kind": "plenary",
     "title": "YP Panel",
     "sessions": [
-      { "track": "all", "text": "YP Panel", "speaker": "Ahsan Qamer Sheikh - Chair, IEEE Young Professionals Germany", "speakers": ["Ahsan Qamer Sheikh"] }
+      { "track": "all", "text": "YP Panel", "speaker": "Ahsan Qamer Sheikh · Sunny Arokia Swamy Bellary · Neha Prakash", "speakers": ["Ahsan Qamer Sheikh", "Sunny Arokia Swamy Bellary", "Neha Prakash"] }
     ]
   },
   {
@@ -271,7 +271,9 @@
     "duration": 20,
     "kind": "plenary",
     "title": "Closing Remarks",
-    "sessions": [],
+    "sessions": [
+      { "track": "all", "text": "Closing Remarks", "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering", "speakers": ["Philip Gonski"] }
+    ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
   {
@@ -280,8 +282,10 @@
     "time": "2:00 PM",
     "duration": 90,
     "kind": "social",
-    "title": "Optional Boston Tour",
-    "sessions": [],
-    "notes": "Small fee, advance sign-up required"
+    "title": "Optional Boston Freedom Tour",
+    "sessions": [
+      { "track": "all", "text": "Guided walking tour of Boston · Approx. 1.5 hours · $15/person (discounted group rate)", "link": "https://events.vtools.ieee.org/m/569148" }
+    ],
+    "notes": "Sign up in advance · $15/person discounted group rate"
   }
 ]
