@@ -2,518 +2,396 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>IEEE YP Summit 2025 – Schedule</title>
+  <title>IEEE YP Summit 2026 – Schedule</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
-    /* ── Page setup ── */
-    @page { size: letter portrait; margin: 0.45in 0.5in; }
-
+    @page { size: letter landscape; margin: 0.35in 0.45in; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 8.5pt;
+      font-size: 7pt;
       color: #111;
       background: #fff;
     }
+
+    /* ── Page break ── */
+    .page-break { page-break-after: always; }
 
     /* ── Header ── */
     .print-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 2.5pt solid #003f8a;
-      padding-bottom: 6pt;
-      margin-bottom: 10pt;
+      border-bottom: 2pt solid #003f8a;
+      padding-bottom: 3pt;
+      margin-bottom: 4pt;
     }
-    .print-header-left h1 {
-      font-size: 14pt;
+    .print-header h1 {
+      font-size: 11pt;
       font-weight: 700;
       color: #003f8a;
-      line-height: 1.15;
+      line-height: 1.2;
     }
-    .print-header-left p {
-      font-size: 8pt;
-      color: #555;
-      margin-top: 2pt;
-    }
-    .print-header-right img {
-      height: 36pt;
-    }
+    .print-header p { font-size: 7pt; color: #555; margin-top: 1pt; }
+    .print-header img { height: 26pt; }
 
     /* ── Track legend ── */
     .track-legend {
       display: flex;
-      gap: 12pt;
-      margin-bottom: 8pt;
-      font-size: 7.5pt;
-    }
-    .track-chip {
-      display: flex;
+      gap: 10pt;
+      margin-bottom: 4pt;
+      font-size: 6.5pt;
       align-items: center;
-      gap: 4pt;
     }
-    .track-dot {
-      width: 8pt;
-      height: 8pt;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .dot-technical { background: #1a5fb4; }
-    .dot-careers   { background: #1b8a3e; }
-    .dot-wie       { background: #7a2d8c; }
+    .track-chip { display: flex; align-items: center; gap: 3pt; }
+    .track-dot { width: 7pt; height: 7pt; border-radius: 50%; flex-shrink: 0; }
+    .dot-t { background: #1a5fb4; }
+    .dot-c { background: #1b8a3e; }
+    .dot-w { background: #7a2d8c; }
 
-    /* ── Day section ── */
-    .day-section { margin-bottom: 10pt; }
+    /* ── Day heading ── */
     .day-heading {
-      font-size: 9.5pt;
+      font-size: 7.5pt;
       font-weight: 700;
       color: #fff;
       background: #003f8a;
-      padding: 3pt 7pt;
-      border-radius: 2pt;
-      margin-bottom: 4pt;
-      letter-spacing: 0.3pt;
+      padding: 2pt 7pt;
+      margin-bottom: 2pt;
       text-transform: uppercase;
+      letter-spacing: 0.4pt;
     }
+    .day-section { margin-bottom: 5pt; }
 
-    /* ── Schedule table ── */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 8pt;
-    }
+    /* ── Tables ── */
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+
+    /* Simple (non-parallel) table */
+    .simple-table .col-time  { width: 52pt; }
+    .simple-table .col-event { width: 120pt; }
+
+    /* Parallel table */
+    .parallel-table .col-time  { width: 48pt; }
+    .parallel-table .col-t,
+    .parallel-table .col-c,
+    .parallel-table .col-w    { width: calc((100% - 48pt) / 3); }
+
     th {
       background: #e8eef7;
       color: #003f8a;
-      font-size: 7pt;
+      font-size: 6pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.3pt;
-      padding: 3pt 5pt;
+      padding: 2pt 4pt;
       text-align: left;
       border: 0.5pt solid #c5d0e0;
     }
+    th.th-t { background: #ddeaff; color: #1a5fb4; border-left: 2.5pt solid #1a5fb4; }
+    th.th-c { background: #d9f0e1; color: #1b8a3e; border-left: 2.5pt solid #1b8a3e; }
+    th.th-w { background: #ecddf5; color: #7a2d8c; border-left: 2.5pt solid #7a2d8c; }
+
     td {
-      padding: 4pt 5pt;
+      padding: 2pt 4pt;
       border: 0.5pt solid #dde3ec;
       vertical-align: top;
-    }
-    tr:nth-child(even) td { background: #f7f9fc; }
-
-    .time-col {
-      width: 52pt;
-      white-space: nowrap;
-      font-weight: 600;
-      color: #003f8a;
-      font-size: 7.5pt;
-    }
-    .event-col { width: 130pt; }
-    .detail-col { }
-
-    .session-title { font-weight: 600; color: #111; }
-    .session-speaker {
       font-size: 7pt;
-      color: #444;
-      margin-top: 1pt;
     }
-
-    /* ── Parallel track rows ── */
-    .track-row { margin-bottom: 3pt; padding-left: 7pt; border-left: 2.5pt solid #ccc; }
-    .track-row.technical { border-color: #1a5fb4; }
-    .track-row.careers   { border-color: #1b8a3e; }
-    .track-row.wie       { border-color: #7a2d8c; }
-    .track-label {
-      font-size: 6.5pt;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.3pt;
-      color: #666;
-    }
-    .track-label.technical { color: #1a5fb4; }
-    .track-label.careers   { color: #1b8a3e; }
-    .track-label.wie       { color: #7a2d8c; }
-    .track-room {
-      font-size: 6.5pt;
-      color: #888;
-    }
-
-    /* ── Row kinds ── */
-    tr.kind-break td { background: #f0f0f0 !important; color: #777; font-style: italic; }
-    tr.kind-meal  td { background: #fffbec !important; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    tr.kind-break td  { background: #f0f0f0 !important; color: #777; font-style: italic; font-size: 7pt; }
+    tr.kind-meal td   { background: #fffbec !important; }
     tr.kind-social td { background: #f0faf5 !important; }
 
-    /* ── Footer / QR ── */
-    .print-footer {
-      margin-top: 12pt;
-      border-top: 1pt solid #ccc;
-      padding-top: 8pt;
+    .time-cell {
+      font-weight: 700;
+      color: #003f8a;
+      font-size: 7pt;
+      white-space: nowrap;
+    }
+    .ev-title { font-weight: 600; }
+    .ev-detail { font-size: 6pt; color: #555; margin-top: 0; }
+
+    /* Track cells — subtle tint per track, suppresses stripe clash */
+    td.track-t { border-left: 2.5pt solid #1a5fb4; background: #f5f9ff !important; }
+    td.track-c { border-left: 2.5pt solid #1b8a3e; background: #f4fbf6 !important; }
+    td.track-w { border-left: 2.5pt solid #7a2d8c; background: #fdf5ff !important; }
+    .talk-title { font-weight: 600; line-height: 1.2; }
+    .talk-speaker { font-size: 6pt; color: #555; margin-top: 0; }
+    .muted { color: #999; font-style: italic; background: #f7f7f7 !important; }
+    .continues { font-size: 5.5pt; color: #777; font-style: italic; }
+
+    /* ── Page 2 slim header ── */
+    .p2-slim-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 12pt;
+      align-items: baseline;
+      border-bottom: 1pt solid #003f8a;
+      padding-bottom: 2pt;
+      margin-bottom: 6pt;
+      font-size: 7pt;
+      color: #555;
     }
-    .footer-info { flex: 1; font-size: 7.5pt; color: #444; line-height: 1.6; }
-    .footer-info strong { color: #003f8a; }
-    .qr-block { text-align: center; flex-shrink: 0; }
-    .qr-block p { font-size: 7pt; color: #555; margin-top: 4pt; font-weight: 600; }
-    #qrcode canvas, #qrcode img { width: 72pt !important; height: 72pt !important; }
-    .qr-placeholder {
-      width: 72pt;
-      height: 72pt;
-      border: 1.5pt dashed #aaa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 6.5pt;
-      color: #aaa;
-      text-align: center;
-      line-height: 1.4;
-    }
+    .p2-slim-header span:first-child { font-weight: 700; color: #003f8a; font-size: 8pt; }
 
-    /* ── Print tweaks ── */
+    /* ── Page 2 QR hero ── */
+    .p2-qr-section {
+      margin-top: 18pt;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8pt;
+    }
+    .p2-qr-card {
+      text-align: center;
+      border: 1pt solid #c5d0e0;
+      border-radius: 8pt;
+      padding: 14pt 28pt;
+      background: #f4f8fd;
+    }
+    .p2-qr-heading {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #003f8a;
+      text-transform: uppercase;
+      letter-spacing: 0.6pt;
+      margin-bottom: 10pt;
+    }
+    #qrcode canvas, #qrcode img { width: 160pt !important; height: 160pt !important; display: block; margin: 0 auto; }
+    .p2-qr-url { font-size: 9pt; font-weight: 600; color: #003f8a; margin-top: 8pt; }
+    .p2-qr-sub { font-size: 6.5pt; color: #888; margin-top: 3pt; }
+    .p2-site-note { font-size: 7pt; color: #666; text-align: center; }
+    .p2-footer { font-size: 6.5pt; color: #aaa; text-align: center; margin-top: 10pt; }
+
+    /* ── Screen ── */
+    @media screen {
+      body { background: #e8e8e8; max-width: 11in; margin: 0.4in auto; }
+      .page { background: #fff; padding: 0.35in 0.45in; margin-bottom: 0.3in; box-shadow: 0 2px 12px rgba(0,0,0,.18); }
+      .no-print { text-align: center; margin-bottom: 14pt; }
+      .no-print button {
+        background: #003f8a; color: #fff; border: none;
+        padding: 7pt 18pt; font-size: 10pt; border-radius: 4pt; cursor: pointer;
+      }
+    }
     @media print {
       .no-print { display: none !important; }
       a { color: inherit; text-decoration: none; }
-      .day-section { page-break-inside: avoid; }
-    }
-
-    /* ── Screen helper ── */
-    @media screen {
-      body { max-width: 7.5in; margin: 0.5in auto; background: #f4f4f4; }
-      .page { background: #fff; padding: 0.45in 0.5in; box-shadow: 0 2px 12px rgba(0,0,0,.15); }
-      .no-print { text-align: center; margin-bottom: 12pt; }
-      .no-print button {
-        background: #003f8a; color: #fff; border: none;
-        padding: 8pt 18pt; font-size: 10pt; border-radius: 4pt; cursor: pointer;
-      }
     }
   </style>
 </head>
 <body>
-<div class="page">
 
-  <div class="no-print">
-    <button onclick="window.print()">Print / Save as PDF</button>
-  </div>
+<div class="no-print"><button onclick="window.print()">Print / Save as PDF</button></div>
 
-  <!-- Header -->
+<!-- ══════════════════ PAGE 1 ══════════════════ -->
+<div class="page page-break">
+
   <div class="print-header">
-    <div class="print-header-left">
-      <h1>IEEE Regions 1 &amp; 2 Young Professionals Summit 2025</h1>
-      <p>August 7–9, 2025 &nbsp;·&nbsp; Boston University &nbsp;·&nbsp; Boston, MA</p>
+    <div>
+      <h1>IEEE Young Professionals Summit 2026</h1>
+      <p>August 7–9, 2026 &nbsp;·&nbsp; Boston University &nbsp;·&nbsp; Boston, MA</p>
     </div>
-    <img src="logo_draft_rect.jpg" alt="IEEE YP Summit" onerror="this.style.display='none'">
   </div>
 
-  <!-- Track legend -->
-  <div class="track-legend">
-    <span class="track-chip"><span class="track-dot dot-technical"></span> Technical Innovation &amp; Applied AI &nbsp;·&nbsp; Room 205</span>
-    <span class="track-chip"><span class="track-dot dot-careers"></span> AI in Careers &amp; Professional Growth &nbsp;·&nbsp; Room 203</span>
-    <span class="track-chip"><span class="track-dot dot-wie"></span> Women in Engineering &nbsp;·&nbsp; Colloquium Room 906</span>
-  </div>
-
-  <!-- ── FRIDAY ── -->
+  <!-- FRIDAY -->
   <div class="day-section">
     <div class="day-heading">Friday, August 7</div>
-    <table>
-      <thead>
-        <tr><th class="time-col">Time</th><th class="event-col">Event</th><th>Details</th></tr>
-      </thead>
+    <table class="simple-table">
+      <colgroup><col class="col-time"><col class="col-event"><col></colgroup>
+      <thead><tr><th>Time</th><th>Event</th><th>Details</th></tr></thead>
       <tbody>
-        <tr class="kind-registration">
-          <td class="time-col">4:00 PM</td>
-          <td><span class="session-title">Registration Opens</span></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="time-col">5:00 PM</td>
-          <td><span class="session-title">Opening Ceremony &amp; Regional Welcome</span></td>
-          <td><span class="session-speaker">Remarks from IEEE Region 1 &amp; Region 2 leadership &amp; invited guests &nbsp;·&nbsp; Colloquium Room 906</span></td>
-        </tr>
-        <tr class="kind-meal">
-          <td class="time-col">6:00 PM</td>
-          <td><span class="session-title">Dinner Buffet &amp; Sponsor Spotlights</span></td>
-          <td>
-            <span class="session-speaker">
-              6:25 PM – IEEE Region 3 &nbsp;·&nbsp;
-              6:35 PM – IEEE AESS &nbsp;·&nbsp;
-              6:45 PM – IEEE-USA
-              &nbsp;·&nbsp; Colloquium Room 906
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td class="time-col">7:00 PM</td>
-          <td><span class="session-title">Evening Session</span></td>
-          <td>
-            <span class="session-title" style="font-weight:normal">Get Connected: How HTB Can Help You Make an Impact</span>
-            <div class="session-speaker">Stephanie Gillespie &nbsp;·&nbsp; Colloquium Room 906</div>
-          </td>
-        </tr>
-        <tr class="kind-social">
-          <td class="time-col">8:00 PM</td>
-          <td><span class="session-title">Networking Mixer + Pitch Brainstorming</span></td>
-          <td></td>
-        </tr>
+        <tr><td class="time-cell">4:00 PM</td><td><span class="ev-title">Registration Opens</span></td><td></td></tr>
+        <tr><td class="time-cell">5:00 PM</td><td><span class="ev-title">Opening Ceremony &amp; Regional Welcome</span></td><td><span class="ev-detail">Remarks from IEEE Region 1 &amp; Region 2 leadership &amp; invited guests &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr class="kind-meal"><td class="time-cell">6:00 PM</td><td><span class="ev-title">Dinner Buffet &amp; Sponsor Spotlights</span></td><td><span class="ev-detail">6:25 PM – IEEE Region 3 &nbsp;·&nbsp; 6:35 PM – IEEE AESS &nbsp;·&nbsp; 6:45 PM – IEEE-USA &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">7:00 PM</td><td><span class="ev-title">Evening Session</span></td><td><span class="ev-detail">Get Connected: How HTB Can Help You Make an Impact &nbsp;·&nbsp; Stephanie Gillespie &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr class="kind-social"><td class="time-cell">8:00 PM</td><td><span class="ev-title">Networking Mixer + Pitch Brainstorming</span></td><td></td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- ── SATURDAY ── -->
+  <!-- SATURDAY -->
   <div class="day-section">
     <div class="day-heading">Saturday, August 8</div>
-    <table>
+
+    <!-- Simple rows first -->
+    <table class="simple-table" style="margin-bottom:2pt">
+      <colgroup><col class="col-time"><col class="col-event"><col></colgroup>
+      <tbody>
+        <tr class="kind-meal"><td class="time-cell">8:00 AM</td><td><span class="ev-title">Registration + Breakfast</span></td><td><span class="ev-detail">Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">9:00 AM</td><td><span class="ev-title">Welcome &amp; Opening Remarks</span></td><td><span class="ev-detail">Jill Gostin – 2026 IEEE President-Elect &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr class="kind-break"><td class="time-cell">9:30 AM</td><td colspan="2">Group Photo</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Parallel blocks -->
+    <table class="parallel-table">
+      <colgroup><col class="col-time"><col class="col-t"><col class="col-c"><col class="col-w"></colgroup>
       <thead>
-        <tr><th class="time-col">Time</th><th class="event-col">Event</th><th>Details / Tracks</th></tr>
+        <tr>
+          <th>Time</th>
+          <th class="th-t">Technical Innovation &amp; Applied AI &nbsp;·&nbsp; Room 205</th>
+          <th class="th-c">AI in Careers &amp; Professional Growth &nbsp;·&nbsp; Room 203</th>
+          <th class="th-w">Women in Engineering &nbsp;·&nbsp; Colloquium Room 906</th>
+        </tr>
       </thead>
       <tbody>
-        <tr class="kind-meal">
-          <td class="time-col">8:00 AM</td>
-          <td><span class="session-title">Registration + Breakfast</span></td>
-          <td><span class="session-speaker">Colloquium Room 906</span></td>
-        </tr>
         <tr>
-          <td class="time-col">9:00 AM</td>
-          <td><span class="session-title">Welcome &amp; Opening Remarks</span></td>
-          <td><span class="session-speaker">Jill Gostin – 2026 IEEE President-Elect &nbsp;·&nbsp; Colloquium Room 906</span></td>
-        </tr>
-        <tr class="kind-break">
-          <td class="time-col">9:30 AM</td>
-          <td colspan="2">Group Photo</td>
-        </tr>
-        <tr>
-          <td class="time-col">9:45 AM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 1</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div>How are AI agents creating new opportunities?</div>
-              <div class="session-speaker">Shankar Krishnan – Stripe</div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>Constraining AI through the Political Process</div>
-              <div class="session-speaker">Russell Harrison – IEEE-USA</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div>Panel: Driving Technology &amp; Leadership in the Face of Transformative Disruption</div>
-              <div class="session-speaker">Moderators: Deyasini Majumdar &amp; Maryam Alibek &nbsp;·&nbsp; Panelists: Jill Gostin, Michele Shindelman, Varshitha Manjunath, Vasundhara Bhupathi &nbsp;·&nbsp; <em>Continues through Block 2 (ends 11:30 AM)</em></div>
-            </div>
+          <td class="time-cell">9:45 AM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t">
+            <div class="talk-title">How are AI agents creating new opportunities across industries?</div>
+            <div class="talk-speaker">Shankar Krishnan – Stripe</div>
+          </td>
+          <td class="track-c">
+            <div class="talk-title">IEEE Industry AI Labs: Connecting YPs to AI Skills &amp; Opportunities</div>
+            <div class="talk-speaker">Abir Chermiti – IEEE</div>
+          </td>
+          <td class="track-w">
+            <div class="talk-title">Panel: Driving Technology &amp; Leadership in the Face of Transformative Disruption</div>
+            <div class="talk-speaker">Mod: Deyasini Majumdar &amp; Maryam Alibek &nbsp;·&nbsp; Panelists: Jill Gostin, Michele Shindelman, Varshitha Manjunath, Vasundhara Bhupathi</div>
+            <div class="continues">Continues through Block 2 — ends 11:30 AM</div>
           </td>
         </tr>
         <tr class="kind-break">
-          <td class="time-col">10:30 AM</td>
-          <td colspan="2">Coffee Break</td>
+          <td class="time-cell">10:30 AM</td><td colspan="3">Coffee Break</td>
         </tr>
         <tr>
-          <td class="time-col">10:45 AM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 2</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div>AI for Autonomous Vehicles: From Foundation Models to Safety Assurance</div>
-              <div class="session-speaker">Kartik Srinivasan – Torc Robotics</div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>The AI Career Playbook: Where to Start, What to Learn, and How to Grow</div>
-              <div class="session-speaker">Phane Mane – Boston Scientific</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div style="color:#888;font-style:italic">WIE Panel continued (ends 11:30 AM)</div>
-            </div>
+          <td class="time-cell">10:45 AM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t">
+            <div class="talk-title">AI for Autonomous Vehicles: From Foundation Models to Safety Assurance</div>
+            <div class="talk-speaker">Kartik Srinivasan – Torc Robotics</div>
           </td>
+          <td class="track-c">
+            <div class="talk-title">Constraining AI through the Political Process</div>
+            <div class="talk-speaker">Russell Harrison – IEEE-USA</div>
+          </td>
+          <td class="track-w muted">WIE Panel continued (ends 11:30 AM)</td>
         </tr>
         <tr class="kind-meal">
-          <td class="time-col">11:30 AM</td>
-          <td><span class="session-title">Lunch &amp; Partner Presentation</span></td>
-          <td><span class="session-speaker">MKS sponsor talk 11:50–11:55 AM &nbsp;·&nbsp; Colloquium Room 906</span></td>
+          <td class="time-cell">11:30 AM</td><td colspan="3"><span class="ev-title">Lunch &amp; Sponsor Talk</span> &nbsp;·&nbsp; <span class="ev-detail">MKS · 11:50–11:55 AM &nbsp;·&nbsp; Colloquium Room 906</span></td>
         </tr>
         <tr>
-          <td class="time-col">12:30 PM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 3</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div>Looking Inside AI Language Models: Inspecting and Steering AI as It Runs</div>
-              <div class="session-speaker">Irene Ko – IBM Research</div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>Staying Relevant in the Age of AI: The Human Skills That Still Matter</div>
-              <div class="session-speaker">Aravindhan Anbazhagan – IEEE ProComm</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div>Building a Deep-Tech Startup in an Era of Photonic Acceleration</div>
-              <div class="session-speaker">Juniyali Nauriyal – Photonect</div>
-            </div>
+          <td class="time-cell">12:30 PM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t">
+            <div class="talk-title">Looking Inside AI Language Models: Inspecting and Steering AI as It Runs</div>
+            <div class="talk-speaker">Irene Ko – IBM Research</div>
+          </td>
+          <td class="track-c">
+            <div class="talk-title">Staying Relevant in the Age of AI: The Human Skills That Still Matter</div>
+            <div class="talk-speaker">Aravindhan Anbazhagan – IEEE ProComm</div>
+          </td>
+          <td class="track-w">
+            <div class="talk-title">Building a Deep-Tech Startup in an Era of Photonic Acceleration</div>
+            <div class="talk-speaker">Juniyali Nauriyal – Photonect</div>
           </td>
         </tr>
         <tr class="kind-break">
-          <td class="time-col">1:15 PM</td>
-          <td colspan="2">Coffee Break</td>
+          <td class="time-cell">1:15 PM</td><td colspan="3">Coffee Break</td>
         </tr>
         <tr>
-          <td class="time-col">1:30 PM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 4</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div>Does your AI Really See What You Think It Sees?</div>
-              <div class="session-speaker">Giselle Zeno – MIT Lincoln Laboratory</div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>Architecting the Real-Time Pipelines that Power AI in Financial Markets</div>
-              <div class="session-speaker">Madhushree Kumari – Visa</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div>Responsible Agentic AI: Designing Human-Centered Autonomy</div>
-              <div class="session-speaker">Vidya Wadkar – Verizon</div>
-            </div>
+          <td class="time-cell">1:30 PM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t">
+            <div class="talk-title">Does your AI Really See What You Think It Sees?</div>
+            <div class="talk-speaker">Giselle Zeno – MIT Lincoln Laboratory</div>
+          </td>
+          <td class="track-c">
+            <div class="talk-title">Architecting the Real-Time Pipelines that Power AI in Financial Markets</div>
+            <div class="talk-speaker">Madhushree Kumari – Visa</div>
+          </td>
+          <td class="track-w">
+            <div class="talk-title">Responsible Agentic AI: Designing Human-Centered Autonomy</div>
+            <div class="talk-speaker">Vidya Wadkar – Verizon</div>
           </td>
         </tr>
         <tr class="kind-social">
-          <td class="time-col">2:15 PM</td>
-          <td><span class="session-title">Social, Networking &amp; Pitch-Making</span></td>
-          <td></td>
+          <td class="time-cell">2:15 PM</td><td colspan="3"><span class="ev-title">Social, Networking &amp; Pitch-Making</span></td>
         </tr>
         <tr>
-          <td class="time-col">3:00 PM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 5</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div>A Guidebook on AI's Applications in the Energy Transition</div>
-              <div class="session-speaker">Yuhan (Sicily) Zheng – IEEE YP CSSC &nbsp;·&nbsp; <em>Continues through Block 6</em></div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>IEEE Industry AI Labs: Connecting YPs to AI Skills &amp; Opportunities</div>
-              <div class="session-speaker">Abir Chermiti – IEEE</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div>AI and the Future of Software Development</div>
-              <div class="session-speaker">Christine Miyachi – Microsoft</div>
-            </div>
+          <td class="time-cell">3:00 PM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t">
+            <div class="talk-title">A Guidebook on AI's Applications in the Energy Transition</div>
+            <div class="talk-speaker">Yuhan (Sicily) Zheng – IEEE YP CSSC</div>
+            <div class="continues">Continues through Block 6 — ends 4:45 PM</div>
+          </td>
+          <td class="track-c">
+            <div class="talk-title">The AI Career Playbook: Where to Start, What to Learn, and How to Grow</div>
+            <div class="talk-speaker">Phane Mane – Boston Scientific</div>
+          </td>
+          <td class="track-w">
+            <div class="talk-title">AI and the Future of Software Development</div>
+            <div class="talk-speaker">Christine Miyachi – Microsoft</div>
           </td>
         </tr>
         <tr class="kind-break">
-          <td class="time-col">3:45 PM</td>
-          <td colspan="2">Coffee Break</td>
+          <td class="time-cell">3:45 PM</td><td colspan="3">Coffee Break</td>
         </tr>
         <tr>
-          <td class="time-col">4:00 PM</td>
-          <td><span class="session-title">Talks &amp; Panels — Block 6</span></td>
-          <td>
-            <div class="track-row technical">
-              <div class="track-label technical">Technical &nbsp;<span class="track-room">· Room 205</span></div>
-              <div style="color:#888;font-style:italic">A Guidebook on AI's Applications in the Energy Transition (continued)</div>
-            </div>
-            <div class="track-row careers">
-              <div class="track-label careers">Careers &nbsp;<span class="track-room">· Room 203</span></div>
-              <div>YP Listening Lab: What's Working, What's Missing, What's Next</div>
-              <div class="session-speaker">Ed Palacio – IEEE R1 IEC Chair</div>
-            </div>
-            <div class="track-row wie">
-              <div class="track-label wie">WIE &nbsp;<span class="track-room">· Colloquium Room 906</span></div>
-              <div>WIE Meet &amp; Greet</div>
-              <div class="session-speaker">Maryam Alibeik</div>
-            </div>
+          <td class="time-cell">4:00 PM<br><span style="font-weight:400;color:#888;font-size:6.5pt">45 min</span></td>
+          <td class="track-t muted">AI's Applications in the Energy Transition (continued)</td>
+          <td class="track-c">
+            <div class="talk-title">YP Listening Lab: What's Working, What's Missing, What's Next</div>
+            <div class="talk-speaker">Ed Palacio – IEEE R1 IEC Chair</div>
+          </td>
+          <td class="track-w">
+            <div class="talk-title">WIE Meet &amp; Greet</div>
+            <div class="talk-speaker">Maryam Alibeik</div>
           </td>
         </tr>
         <tr>
-          <td class="time-col">4:45 PM</td>
-          <td><span class="session-title">Day 2 Closing</span></td>
-          <td><span class="session-speaker">Colloquium Room 906</span></td>
+          <td class="time-cell">4:45 PM</td><td colspan="3"><span class="ev-title">Day 2 Closing</span> &nbsp;·&nbsp; <span class="ev-detail">Colloquium Room 906</span></td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <!-- ── SUNDAY ── -->
+</div><!-- end page 1 -->
+
+<!-- ══════════════════ PAGE 2 ══════════════════ -->
+<div class="page">
+
+  <div class="p2-slim-header">
+    <span>IEEE Young Professionals Summit 2026</span>
+    <span>August 7–9, 2026 &nbsp;·&nbsp; Boston University &nbsp;·&nbsp; Boston, MA</span>
+  </div>
+
+  <!-- SUNDAY -->
   <div class="day-section">
     <div class="day-heading">Sunday, August 9</div>
-    <table>
-      <thead>
-        <tr><th class="time-col">Time</th><th class="event-col">Event</th><th>Details</th></tr>
-      </thead>
+    <table class="simple-table">
+      <colgroup><col class="col-time"><col class="col-event"><col></colgroup>
+      <thead><tr><th>Time</th><th>Event</th><th>Details</th></tr></thead>
       <tbody>
-        <tr class="kind-meal">
-          <td class="time-col">8:00 AM</td>
-          <td><span class="session-title">Registration + Breakfast</span></td>
-          <td><span class="session-speaker">Colloquium Room 906</span></td>
-        </tr>
-        <tr>
-          <td class="time-col">9:00 AM</td>
-          <td><span class="session-title">WIE Keynote</span></td>
-          <td>
-            <div>Amplifying Human Potential for an AI-Powered Future</div>
-            <div class="session-speaker">Anuradha C. Bahl – Northrop Grumman &nbsp;·&nbsp; Colloquium Room 906</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="time-col">9:30 AM</td>
-          <td><span class="session-title">YP Panel</span></td>
-          <td><span class="session-speaker">Ahsan Qamer Sheikh &nbsp;·&nbsp; Sunny Arokia Swamy Bellary &nbsp;·&nbsp; Neha Prakash &nbsp;·&nbsp; Colloquium Room 906</span></td>
-        </tr>
-        <tr>
-          <td class="time-col">10:00 AM</td>
-          <td><span class="session-title">Pitch Competition</span></td>
-          <td><span class="session-speaker">20–30 teams pitch to a panel of judges &nbsp;·&nbsp; Colloquium Room 906</span></td>
-        </tr>
-        <tr>
-          <td class="time-col">11:40 AM</td>
-          <td><span class="session-title">Closing Remarks</span></td>
-          <td><span class="session-speaker">Philip Gonski – IEEE Region 2 Director-Elect &nbsp;·&nbsp; Colloquium Room 906</span></td>
-        </tr>
-        <tr class="kind-social">
-          <td class="time-col">2:00 PM</td>
-          <td><span class="session-title">Optional Boston Freedom Tour</span></td>
-          <td><span class="session-speaker">Guided walking tour of Boston &nbsp;·&nbsp; $15/person (discounted group rate)</span></td>
-        </tr>
+        <tr class="kind-meal"><td class="time-cell">8:00 AM</td><td><span class="ev-title">Registration + Breakfast</span></td><td><span class="ev-detail">Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">9:00 AM</td><td><span class="ev-title">WIE Keynote</span></td><td><span class="ev-detail">Amplifying Human Potential for an AI-Powered Future &nbsp;·&nbsp; Anuradha C. Bahl – Northrop Grumman &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">9:30 AM</td><td><span class="ev-title">YP Panel</span></td><td><span class="ev-detail">Ahsan Qamer Sheikh &nbsp;·&nbsp; Sunny Arokia Swamy Bellary &nbsp;·&nbsp; Neha Prakash &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">10:00 AM</td><td><span class="ev-title">Pitch Competition</span></td><td><span class="ev-detail">20–30 teams pitch to a panel of judges &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr><td class="time-cell">11:40 AM</td><td><span class="ev-title">Closing Remarks</span></td><td><span class="ev-detail">Philip Gonski – IEEE Region 2 Director-Elect &nbsp;·&nbsp; Colloquium Room 906</span></td></tr>
+        <tr class="kind-social"><td class="time-cell">2:00 PM</td><td><span class="ev-title">Optional Boston Freedom Tour</span></td><td><span class="ev-detail">Guided walking tour of Boston &nbsp;·&nbsp; $15/person (discounted group rate)</span></td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Footer -->
-  <div class="print-footer">
-    <div class="footer-info">
-      <strong>Venue</strong><br>
-      Boston University &nbsp;·&nbsp; 1 Silber Way, Boston, MA 02215<br><br>
-      <strong>Schedule &amp; Speakers</strong><br>
-      ieeeypsummit.org &nbsp;·&nbsp; #IEEEYPSummit2025
-    </div>
-    <div class="qr-block">
+  <!-- QR Hero -->
+  <div class="p2-qr-section">
+    <div class="p2-qr-card">
+      <div class="p2-qr-heading">Post-Event Survey</div>
       <div id="qrcode"></div>
-      <p>Post-Event Survey</p>
+      <div class="p2-qr-url">survey.ieeeypsummit.com</div>
+      <div class="p2-qr-sub">Scan to share your feedback</div>
     </div>
+    <div class="p2-site-note">Full schedule &amp; speaker bios at <strong>ieeeypsummit.org</strong></div>
   </div>
 
-</div>
+  <div class="p2-footer">#IEEEYPSummit2026 &nbsp;·&nbsp; ieeeypsummit.org</div>
+
+</div><!-- end page 2 -->
 
 <script>
-  // Replace SURVEY_URL with the actual survey link
-  var SURVEY_URL = "https://survey.ieeeypsummit.com";
-
-  var qrEl = document.getElementById("qrcode");
-  if (SURVEY_URL) {
-    new QRCode(qrEl, {
-      text: SURVEY_URL,
-      width: 96,
-      height: 96,
-      colorDark: "#003f8a",
-      colorLight: "#ffffff"
-    });
-  } else {
-    qrEl.innerHTML = '<div class="qr-placeholder">Survey<br>QR Code<br><span style="font-size:6pt">(URL pending)</span></div>';
-  }
+  new QRCode(document.getElementById("qrcode"), {
+    text: "https://survey.ieeeypsummit.com",
+    width: 128,
+    height: 128,
+    colorDark: "#003f8a",
+    colorLight: "#ffffff"
+  });
 </script>
 </body>
 </html>

@@ -93,7 +93,7 @@
     "title": "Talks & Panels — Block 1",
     "sessions": [
       { "track": "technical", "text": "How are AI agents creating new opportunities for your professionals across various industries?", "speaker": "Shankar Krishnan - Product Management Leader, Stripe", "speakers": ["Shankar Krishnan"] },
-      { "track": "careers", "text": "Constraining AI through the Political Process", "speaker": "Russell Harrison - Managing Director, IEEE-USA", "speakers": ["Russell Harrison"] },
+      { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
       { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
     ]
   },
@@ -115,7 +115,7 @@
     "title": "Talks & Panels — Block 2",
     "sessions": [
       { "track": "technical", "text": "AI for Autonomous Vehicles: From Foundation Models to Safety Assurance", "speaker": "Kartik Srinivasan - Staff Systems Engineer, Torc Robotics", "speakers": ["Kartik Srinivasan"] },
-      { "track": "careers", "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow", "speaker": "Phane Mane - Boston Scientific", "speakers": ["Phane Mane"] },
+      { "track": "careers", "text": "Constraining AI through the Political Process", "speaker": "Russell Harrison - Managing Director, IEEE-USA", "speakers": ["Russell Harrison"] },
       { "track": "wie", "text": "WIE Panel continued from Block 1 (ends 11:30 AM)", "muted": true }
     ]
   },
@@ -182,7 +182,7 @@
     "title": "Talks & Panels — Block 5",
     "sessions": [
       { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition", "speaker": "Yuhan (Sicily) Zheng - Chair, IEEE Young Professionals (YP) Climate and Sustainability Subcommittee (CSSC)", "speakers": ["Yuhan (Sicily) Zheng"], "continuesNote": "Continues through Block 6 — ends 4:45 PM" },
-      { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
+      { "track": "careers", "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow", "speaker": "Phane Mane - Boston Scientific", "speakers": ["Phane Mane"] },
       { "track": "wie", "text": "AI and the Future of Software Development", "speaker": "Christine Miyachi - Principal Software Engineering Manager, Microsoft", "speakers": ["Christine Miyachi"] }
     ]
   },
