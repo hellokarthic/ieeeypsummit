@@ -25,9 +25,9 @@
     "time": "6:00 PM",
     "duration": 60,
     "kind": "meal",
-    "title": "Dinner Buffet & Sponsor Spotlights",
+    "title": "Dinner Buffet & Patron Spotlights",
     "sessions": [
-      { "track": "all", "text": "Sponsor Spotlights", "speaker": "6:25-6:35 PM - IEEE Region 3<br>6:35-6:45 PM - IEEE Aerospace and Electronic Systems Society<br>6:45-6:55 PM - IEEE-USA" }
+      { "track": "all", "text": "Patron Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Aerospace and Electronic Systems Society" }
     ],
     "notes": "Dinner provided · Colloquium Room 906"
   },
@@ -94,7 +94,7 @@
     "sessions": [
       { "track": "technical", "text": "How are AI agents creating new opportunities for your professionals across various industries?", "speaker": "Shankar Krishnan - Product Management Leader, Stripe", "speakers": ["Shankar Krishnan"] },
       { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
-      { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
+      { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi · Drew Lowery", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi", "Drew Lowery"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
     ]
   },
   {
@@ -125,9 +125,9 @@
     "time": "11:30 AM",
     "duration": 60,
     "kind": "meal",
-    "title": "Lunch & Sponsor Spotlight",
+    "title": "Lunch & Patron Spotlight",
     "sessions": [],
-    "notes": "Lunch provided · MKS sponsor talk 11:50-11:55 AM · Colloquium Room 906"
+    "notes": "Lunch provided · MKS patron spotlight 11:50-11:55 AM · Colloquium Room 906"
   },
   {
     "day": "saturday",
@@ -205,7 +205,7 @@
     "sessions": [
       { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition continued (ends 4:45 PM)", "muted": true },
       { "track": "careers", "text": "YP Listening Lab: What's Working, What's Missing, What's Next", "speaker": "Ed Palacio - IEEE R1 IEC Chair", "speakers": ["Ed Palacio"] },
-      { "track": "wie", "text": "WIE Meet & Greet", "speaker": "Maryam Alibeik", "speakers": ["Maryam Alibeik"] }
+      { "track": "wie", "text": "WIE Meet & Greet", "speaker": "Deyasini Majumdar - IEEE Region 1 WIE Coordinator · Maryam Alibeik - IEEE Region 2 WIE Coordinator", "speakers": ["Maryam Alibeik", "Deyasini Majumdar"] }
     ]
   },
   {
@@ -270,9 +270,9 @@
     "time": "11:40 AM",
     "duration": 20,
     "kind": "plenary",
-    "title": "Closing Remarks",
+    "title": "Closing Remarks & Acknowledgments",
     "sessions": [
-      { "track": "all", "text": "Closing Remarks", "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering" }
+      { "track": "all", "text": "Closing Remarks & Acknowledgments", "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering<br>Sam Stone - IEEE Region 1 YP Coordinator" }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -282,9 +282,9 @@
     "time": "2:00 PM",
     "duration": 90,
     "kind": "social",
-    "title": "Optional Boston Freedom Tour",
+    "title": "Optional Boston Freedom Trail Tour",
     "sessions": [
-      { "track": "all", "text": "Guided walking tour of Boston · $15/person (discounted group rate)", "link": "https://events.vtools.ieee.org/m/569148" }
+      { "track": "all", "text": "Guided Walking Tour of the Boston Freedom Trail · $15/person (discounted group rate)", "link": "https://events.vtools.ieee.org/m/569148" }
     ],
     "notes": ""
   }
