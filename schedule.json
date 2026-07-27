@@ -27,7 +27,7 @@
     "kind": "meal",
     "title": "Dinner Buffet & Patron Spotlights",
     "sessions": [
-      { "track": "all", "text": "Patron Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section" }
+      { "track": "all", "text": "Patron Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe" }
     ],
     "notes": "Dinner provided · Colloquium Room 906"
   },
