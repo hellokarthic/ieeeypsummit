@@ -125,9 +125,11 @@
     "time": "11:30 AM",
     "duration": 60,
     "kind": "meal",
-    "title": "Lunch & Patron Spotlight",
-    "sessions": [],
-    "notes": "Lunch provided · MKS 11:55 AM–12:00 PM · IEEE Aerospace and Electronic Systems Society 12:00–12:15 PM · Colloquium Room 906"
+    "title": "Lunch & Patron Spotlights",
+    "sessions": [
+      { "track": "all", "text": "Patron Spotlights", "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:15 PM - IEEE Aerospace and Electronic Systems Society" }
+    ],
+    "notes": "Lunch provided · Colloquium Room 906"
   },
   {
     "day": "saturday",
