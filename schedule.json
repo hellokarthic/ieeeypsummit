@@ -25,9 +25,9 @@
     "time": "6:00 PM",
     "duration": 60,
     "kind": "meal",
-    "title": "Dinner Buffet & Patron Spotlights",
+    "title": "Dinner Buffet & Sponsor Spotlights",
     "sessions": [
-      { "track": "all", "text": "Patron Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe" }
+      { "track": "all", "text": "Sponsor Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe" }
     ],
     "notes": "Dinner provided · Colloquium Room 906"
   },
@@ -125,9 +125,9 @@
     "time": "11:30 AM",
     "duration": 60,
     "kind": "meal",
-    "title": "Lunch & Patron Spotlights",
+    "title": "Lunch & Sponsor Spotlights",
     "sessions": [
-      { "track": "all", "text": "Patron Spotlights", "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:15 PM - IEEE Aerospace and Electronic Systems Society" }
+      { "track": "all", "text": "Sponsor Spotlights", "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:15 PM - IEEE Aerospace and Electronic Systems Society" }
     ],
     "notes": "Lunch provided · Colloquium Room 906"
   },
