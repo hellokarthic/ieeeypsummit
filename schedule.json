@@ -27,7 +27,7 @@
     "kind": "meal",
     "title": "Dinner Buffet & Sponsor Spotlights",
     "sessions": [
-      { "track": "all", "text": "Sponsor Spotlights", "speaker": "6:25-6:35 PM - IEEE Region 3<br>6:35-6:45 PM - IEEE Aerospace and Electronic Systems Society<br>6:45-6:55 PM - IEEE-USA" }
+      { "track": "all", "text": "Sponsor Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe" }
     ],
     "notes": "Dinner provided · Colloquium Room 906"
   },
@@ -93,8 +93,8 @@
     "title": "Talks & Panels — Block 1",
     "sessions": [
       { "track": "technical", "text": "How are AI agents creating new opportunities for your professionals across various industries?", "speaker": "Shankar Krishnan - Product Management Leader, Stripe", "speakers": ["Shankar Krishnan"] },
-      { "track": "careers", "text": "Constraining AI through the Political Process", "speaker": "Russell Harrison - Managing Director, IEEE-USA", "speakers": ["Russell Harrison"] },
-      { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
+      { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
+      { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi · Drew Lowery", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi", "Drew Lowery"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
     ]
   },
   {
@@ -115,7 +115,7 @@
     "title": "Talks & Panels — Block 2",
     "sessions": [
       { "track": "technical", "text": "AI for Autonomous Vehicles: From Foundation Models to Safety Assurance", "speaker": "Kartik Srinivasan - Staff Systems Engineer, Torc Robotics", "speakers": ["Kartik Srinivasan"] },
-      { "track": "careers", "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow", "speaker": "Phane Mane - Boston Scientific", "speakers": ["Phane Mane"] },
+      { "track": "careers", "text": "Constraining AI through the Political Process", "speaker": "Russell Harrison - Managing Director, IEEE-USA", "speakers": ["Russell Harrison"] },
       { "track": "wie", "text": "WIE Panel continued from Block 1 (ends 11:30 AM)", "muted": true }
     ]
   },
@@ -125,9 +125,11 @@
     "time": "11:30 AM",
     "duration": 60,
     "kind": "meal",
-    "title": "Lunch & Partner Presentation",
-    "sessions": [],
-    "notes": "Lunch provided · MKS sponsor talk 11:50-11:55 AM · Colloquium Room 906"
+    "title": "Lunch & Sponsor Spotlights",
+    "sessions": [
+      { "track": "all", "text": "Sponsor Spotlights", "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:20 PM - IEEE Aerospace and Electronic Systems Society" }
+    ],
+    "notes": "Lunch provided · Colloquium Room 906"
   },
   {
     "day": "saturday",
@@ -182,7 +184,7 @@
     "title": "Talks & Panels — Block 5",
     "sessions": [
       { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition", "speaker": "Yuhan (Sicily) Zheng - Chair, IEEE Young Professionals (YP) Climate and Sustainability Subcommittee (CSSC)", "speakers": ["Yuhan (Sicily) Zheng"], "continuesNote": "Continues through Block 6 — ends 4:45 PM" },
-      { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
+      { "track": "careers", "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow", "speaker": "Phane Mane - Boston Scientific", "speakers": ["Phane Mane"] },
       { "track": "wie", "text": "AI and the Future of Software Development", "speaker": "Christine Miyachi - Principal Software Engineering Manager, Microsoft", "speakers": ["Christine Miyachi"] }
     ]
   },
@@ -205,7 +207,7 @@
     "sessions": [
       { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition continued (ends 4:45 PM)", "muted": true },
       { "track": "careers", "text": "YP Listening Lab: What's Working, What's Missing, What's Next", "speaker": "Ed Palacio - IEEE R1 IEC Chair", "speakers": ["Ed Palacio"] },
-      { "track": "wie", "text": "WIE Meet & Greet", "speaker": "Maryam Alibeik", "speakers": ["Maryam Alibeik"] }
+      { "track": "wie", "text": "WIE Meet & Greet", "speaker": "Deyasini Majumdar - IEEE Region 1 WIE Coordinator · Maryam Alibeik - IEEE Region 2 WIE Coordinator", "speakers": ["Maryam Alibeik", "Deyasini Majumdar"] }
     ]
   },
   {
@@ -249,7 +251,7 @@
     "kind": "plenary",
     "title": "YP Panel",
     "sessions": [
-      { "track": "all", "text": "YP Panel", "speaker": "Ahsan Qamer Sheikh - Chair, IEEE Young Professionals Germany", "speakers": ["Ahsan Qamer Sheikh"] }
+      { "track": "all", "text": "What Works in YP Engagement", "speaker": "Ahsan Qamer Sheikh · Polat Goktas · Sunny Arokia Swamy Bellary · Neha Prakash", "speakers": ["Ahsan Qamer Sheikh", "Polat Goktas", "Sunny Arokia Swamy Bellary", "Neha Prakash"] }
     ]
   },
   {
@@ -270,8 +272,10 @@
     "time": "11:40 AM",
     "duration": 20,
     "kind": "plenary",
-    "title": "Closing Remarks",
-    "sessions": [],
+    "title": "Closing Remarks & Acknowledgments",
+    "sessions": [
+      { "track": "all", "text": "Closing Remarks & Acknowledgments", "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering<br>Sam Stone - IEEE Region 1 YP Coordinator" }
+    ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
   {
@@ -280,8 +284,10 @@
     "time": "2:00 PM",
     "duration": 90,
     "kind": "social",
-    "title": "Optional Boston Tour",
-    "sessions": [],
-    "notes": "Small fee, advance sign-up required"
+    "title": "Optional Boston Freedom Trail Tour",
+    "sessions": [
+      { "track": "all", "text": "Guided Walking Tour of the Boston Freedom Trail · $15/person (discounted group rate)", "link": "https://events.vtools.ieee.org/m/569148" }
+    ],
+    "notes": ""
   }
 ]

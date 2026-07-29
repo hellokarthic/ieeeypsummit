@@ -172,6 +172,19 @@
   margin-top: 0.3rem;
 }
 
+.schedule-session-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #004f9f;
+  text-decoration: none;
+}
+
+.schedule-session-link:hover {
+  text-decoration: underline;
+}
+
 .schedule-session-muted {
   background: #eef1f5 !important;
 }

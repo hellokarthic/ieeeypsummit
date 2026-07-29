@@ -2,9 +2,9 @@ const AVATAR_COLORS = ["#004f9f", "#1ca64d", "#862e91", "#c49a2c", "#c0392b", "#
 
 // Where each track meets; sessions open to everyone default to the main venue room.
 const TRACK_ROOMS = {
-  technical: "Colloquium Room 906",
+  technical: "Room 205",
   careers: "Room 203",
-  wie: "Room 205",
+  wie: "Colloquium Room 906",
   all: "Colloquium Room 906"
 };
 
