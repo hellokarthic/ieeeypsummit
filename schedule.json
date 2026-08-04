@@ -17,7 +17,13 @@
     "sessions": [
       {
         "track": "all",
-        "text": "Remarks from IEEE Region 1 & Region 2 leadership and invited guests"
+        "text": "Remarks from IEEE Region 1 & Region 2 leadership and invited guests",
+        "speakers": [
+          "Drew Lowery",
+          "Charles P. Rubenstein",
+          "Alberto Tam Yong"
+        ],
+        "speaker": "Drew Lowery · Charles P. Rubenstein · Alberto Tam Yong"
       }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
