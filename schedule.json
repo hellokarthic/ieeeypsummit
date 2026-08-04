@@ -15,7 +15,10 @@
     "kind": "plenary",
     "title": "Opening Ceremony & Regional Welcome",
     "sessions": [
-      { "track": "all", "text": "Remarks from IEEE Region 1 & Region 2 leadership and invited guests" }
+      {
+        "track": "all",
+        "text": "Remarks from IEEE Region 1 & Region 2 leadership and invited guests"
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -27,7 +30,11 @@
     "kind": "meal",
     "title": "Dinner Buffet & Sponsor Spotlights",
     "sessions": [
-      { "track": "all", "text": "Sponsor Spotlights", "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe" }
+      {
+        "track": "all",
+        "text": "Sponsor Spotlights",
+        "speaker": "6:30-6:40 PM - IEEE Region 3<br>6:40-6:50 PM - IEEE Boston Section<br>6:50-7:00 PM - IEEE Future Vision Cafe"
+      }
     ],
     "notes": "Dinner provided · Colloquium Room 906"
   },
@@ -39,7 +46,14 @@
     "kind": "plenary",
     "title": "Evening Session",
     "sessions": [
-      { "track": "all", "text": "Get Connected: How HTB Can Help You Make an Impact", "speaker": "Stephanie Gillespie - Associate Dean, Tagliatela College of Engineering, University of New Haven · Chair, IEEE Humanitarian Technologies Education Committee", "speakers": ["Stephanie Gillespie"] }
+      {
+        "track": "all",
+        "text": "Get Connected: How HTB Can Help You Make an Impact",
+        "speaker": "Stephanie Gillespie - Associate Dean, Tagliatela College of Engineering, University of New Haven · Chair, IEEE Humanitarian Technologies Education Committee",
+        "speakers": [
+          "Stephanie Gillespie"
+        ]
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -52,7 +66,6 @@
     "title": "Networking Mixer + Pitch Brainstorming",
     "sessions": []
   },
-
   {
     "day": "saturday",
     "dayLabel": "Saturday, August 8",
@@ -71,7 +84,13 @@
     "kind": "plenary",
     "title": "Welcome & Opening Remarks",
     "sessions": [
-      { "track": "all", "text": "Jill Gostin - 2026 IEEE President-Elect", "speakers": ["Jill Gostin"] }
+      {
+        "track": "all",
+        "text": "Jill Gostin - 2026 IEEE President-Elect",
+        "speakers": [
+          "Jill Gostin"
+        ]
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -92,9 +111,37 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 1",
     "sessions": [
-      { "track": "technical", "text": "How are AI agents creating new opportunities for your professionals across various industries?", "speaker": "Shankar Krishnan - Product Management Leader, Stripe", "speakers": ["Shankar Krishnan"] },
-      { "track": "careers", "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities", "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE", "speakers": ["Abir Chermiti"] },
-      { "track": "wie", "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi · Drew Lowery", "speakers": ["Deyasini Majumdar", "Maryam Alibek", "Jill Gostin", "Michele Shindelman", "Varshitha Manjunath", "Vasundhara (Vasu) Bhupathi", "Drew Lowery"], "continuesNote": "Continues through Block 2 — ends 11:30 AM" }
+      {
+        "track": "technical",
+        "text": "How are AI agents creating new opportunities for your professionals across various industries?",
+        "speaker": "Shankar Krishnan - Product Management Leader, Stripe",
+        "speakers": [
+          "Shankar Krishnan"
+        ]
+      },
+      {
+        "track": "careers",
+        "text": "IEEE Industry AI Labs: Connecting Young Professionals to AI Skills, Tools, and Industry Opportunities",
+        "speaker": "Abir Chermiti - Program Manager, Industry Engagement, IEEE",
+        "speakers": [
+          "Abir Chermiti"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption",
+        "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi · Drew Lowery",
+        "speakers": [
+          "Deyasini Majumdar",
+          "Maryam Alibek",
+          "Jill Gostin",
+          "Michele Shindelman",
+          "Varshitha Manjunath",
+          "Vasundhara (Vasu) Bhupathi",
+          "Drew Lowery"
+        ],
+        "continuesNote": "Continues through Block 2 — ends 11:30 AM"
+      }
     ]
   },
   {
@@ -114,9 +161,27 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 2",
     "sessions": [
-      { "track": "technical", "text": "AI for Autonomous Vehicles: From Foundation Models to Safety Assurance", "speaker": "Kartik Srinivasan - Staff Systems Engineer, Torc Robotics", "speakers": ["Kartik Srinivasan"] },
-      { "track": "careers", "text": "Constraining AI through the Political Process", "speaker": "Russell Harrison - Managing Director, IEEE-USA", "speakers": ["Russell Harrison"] },
-      { "track": "wie", "text": "WIE Panel continued from Block 1 (ends 11:30 AM)", "muted": true }
+      {
+        "track": "technical",
+        "text": "AI for Autonomous Vehicles: From Foundation Models to Safety Assurance",
+        "speaker": "Kartik Srinivasan - Staff Systems Engineer, Torc Robotics",
+        "speakers": [
+          "Kartik Srinivasan"
+        ]
+      },
+      {
+        "track": "careers",
+        "text": "Constraining AI through the Political Process",
+        "speaker": "Russell Harrison - Managing Director, IEEE-USA",
+        "speakers": [
+          "Russell Harrison"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "WIE Panel continued from Block 1 (ends 11:30 AM)",
+        "muted": true
+      }
     ]
   },
   {
@@ -127,7 +192,11 @@
     "kind": "meal",
     "title": "Lunch & Sponsor Spotlights",
     "sessions": [
-      { "track": "all", "text": "Sponsor Spotlights", "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:20 PM - IEEE Aerospace and Electronic Systems Society" }
+      {
+        "track": "all",
+        "text": "Sponsor Spotlights",
+        "speaker": "11:55 AM–12:00 PM - MKS<br>12:00–12:20 PM - IEEE Aerospace and Electronic Systems Society"
+      }
     ],
     "notes": "Lunch provided · Colloquium Room 906"
   },
@@ -139,9 +208,30 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 3",
     "sessions": [
-      { "track": "technical", "text": "Looking Inside AI Language Models: Inspecting and Steering AI as It Runs", "speaker": "Irene Ko - IBM Research", "speakers": ["Irene Ko"] },
-      { "track": "careers", "text": "Staying Relevant in the Age of AI", "speaker": "Aravindhan Anbazhagan - Board of Governors, IEEE Professional Communication Society", "speakers": ["Aravindhan Anbazhagan"] },
-      { "track": "wie", "text": "Building a Deep-Tech Startup in an Era of Photonic Acceleration Due to AI", "speaker": "Juniyali Nauriyal - CEO & Co-Founder, Photonect", "speakers": ["Juniyali Nauriyal"] }
+      {
+        "track": "technical",
+        "text": "Looking Inside AI Language Models: Inspecting and Steering AI as It Runs",
+        "speaker": "Irene Ko - IBM Research",
+        "speakers": [
+          "Irene Ko"
+        ]
+      },
+      {
+        "track": "careers",
+        "text": "Staying Relevant in the Age of AI",
+        "speaker": "Aravindhan Anbazhagan - Board of Governors, IEEE Professional Communication Society",
+        "speakers": [
+          "Aravindhan Anbazhagan"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "Building a Deep-Tech Startup in an Era of Photonic Acceleration Due to AI",
+        "speaker": "Juniyali Nauriyal - CEO & Co-Founder, Photonect",
+        "speakers": [
+          "Juniyali Nauriyal"
+        ]
+      }
     ]
   },
   {
@@ -161,9 +251,30 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 4",
     "sessions": [
-      { "track": "technical", "text": "Research Talk", "speaker": "Giselle Zeno - Technical Staff, MIT Lincoln Laboratory", "speakers": ["Giselle Zeno"] },
-      { "track": "careers", "text": "Architecting the Real-Time Pipelines that Power AI in Financial Markets", "speaker": "Madhushree Kumari - Staff Software Engineer, Visa", "speakers": ["Madhushree Kumari"] },
-      { "track": "wie", "text": "Responsible Agentic AI: Designing Human-Centered Autonomy for the Future of Work", "speaker": "Vidya Wadkar - Distinguished Engineer, Verizon", "speakers": ["Vidya Wadkar"] }
+      {
+        "track": "technical",
+        "text": "Research Talk",
+        "speaker": "Giselle Zeno - Technical Staff, MIT Lincoln Laboratory",
+        "speakers": [
+          "Giselle Zeno"
+        ]
+      },
+      {
+        "track": "careers",
+        "text": "Architecting the Real-Time Pipelines that Power AI in Financial Markets",
+        "speaker": "Madhushree Kumari - Staff Software Engineer, Visa",
+        "speakers": [
+          "Madhushree Kumari"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "Responsible Agentic AI: Designing Human-Centered Autonomy for the Future of Work",
+        "speaker": "Vidya Wadkar - Distinguished Engineer, Verizon",
+        "speakers": [
+          "Vidya Wadkar"
+        ]
+      }
     ]
   },
   {
@@ -183,9 +294,31 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 5",
     "sessions": [
-      { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition", "speaker": "Yuhan (Sicily) Zheng - Chair, IEEE Young Professionals (YP) Climate and Sustainability Subcommittee (CSSC)", "speakers": ["Yuhan (Sicily) Zheng"], "continuesNote": "Continues through Block 6 — ends 4:45 PM" },
-      { "track": "careers", "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow", "speaker": "Phane Mane - Boston Scientific", "speakers": ["Phane Mane"] },
-      { "track": "wie", "text": "AI and the Future of Software Development", "speaker": "Christine Miyachi - Principal Software Engineering Manager, Microsoft", "speakers": ["Christine Miyachi"] }
+      {
+        "track": "technical",
+        "text": "A Guidebook on AI's Applications in the Energy Transition",
+        "speaker": "Yuhan (Sicily) Zheng - Chair, IEEE Young Professionals (YP) Climate and Sustainability Subcommittee (CSSC)",
+        "speakers": [
+          "Yuhan (Sicily) Zheng"
+        ],
+        "continuesNote": "Continues through Block 6 — ends 4:45 PM"
+      },
+      {
+        "track": "careers",
+        "text": "The AI Career Playbook: Where to Start, What to Learn, and How to Grow",
+        "speaker": "Phane Mane - Boston Scientific",
+        "speakers": [
+          "Phane Mane"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "AI and the Future of Software Development",
+        "speaker": "Christine Miyachi - Principal Software Engineering Manager, Microsoft",
+        "speakers": [
+          "Christine Miyachi"
+        ]
+      }
     ]
   },
   {
@@ -205,9 +338,28 @@
     "kind": "parallel",
     "title": "Talks & Panels — Block 6",
     "sessions": [
-      { "track": "technical", "text": "A Guidebook on AI's Applications in the Energy Transition continued (ends 4:45 PM)", "muted": true },
-      { "track": "careers", "text": "YP Listening Lab: What's Working, What's Missing, What's Next", "speaker": "Ed Palacio - IEEE R1 IEC Chair", "speakers": ["Ed Palacio"] },
-      { "track": "wie", "text": "WIE Meet & Greet", "speaker": "Deyasini Majumdar - IEEE Region 1 WIE Coordinator · Maryam Alibeik - IEEE Region 2 WIE Coordinator", "speakers": ["Maryam Alibeik", "Deyasini Majumdar"] }
+      {
+        "track": "technical",
+        "text": "A Guidebook on AI's Applications in the Energy Transition continued (ends 4:45 PM)",
+        "muted": true
+      },
+      {
+        "track": "careers",
+        "text": "YP Listening Lab: What's Working, What's Missing, What's Next",
+        "speaker": "Ed Palacio - IEEE R1 IEC Chair",
+        "speakers": [
+          "Ed Palacio"
+        ]
+      },
+      {
+        "track": "wie",
+        "text": "WIE Meet & Greet",
+        "speaker": "Deyasini Majumdar - IEEE Region 1 WIE Coordinator · Maryam Alibeik - IEEE Region 2 WIE Coordinator",
+        "speakers": [
+          "Maryam Alibeik",
+          "Deyasini Majumdar"
+        ]
+      }
     ]
   },
   {
@@ -220,7 +372,6 @@
     "sessions": [],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
-
   {
     "day": "sunday",
     "dayLabel": "Sunday, August 9",
@@ -239,7 +390,14 @@
     "kind": "plenary",
     "title": "WIE Keynote",
     "sessions": [
-      { "track": "all", "text": "Keynote Address: Amplifying Human Potential for an AI-Powered Future", "speaker": "Anuradha C. Bahl - Senior Leader, Northrop Grumman", "speakers": ["Anuradha C. Bahl"] }
+      {
+        "track": "all",
+        "text": "Keynote Address: Amplifying Human Potential for an AI-Powered Future",
+        "speaker": "Anuradha C. Bahl - Senior Leader, Northrop Grumman",
+        "speakers": [
+          "Anuradha C. Bahl"
+        ]
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -251,7 +409,17 @@
     "kind": "plenary",
     "title": "YP Panel",
     "sessions": [
-      { "track": "all", "text": "What Works in YP Engagement", "speaker": "Ahsan Qamer Sheikh · Polat Goktas · Sunny Arokia Swamy Bellary · Neha Prakash", "speakers": ["Ahsan Qamer Sheikh", "Polat Goktas", "Sunny Arokia Swamy Bellary", "Neha Prakash"] }
+      {
+        "track": "all",
+        "text": "What Works in YP Engagement",
+        "speaker": "Ahsan Qamer Sheikh · Polat Goktas · Sunny Arokia Swamy Bellary · Neha Prakash",
+        "speakers": [
+          "Ahsan Qamer Sheikh",
+          "Polat Goktas",
+          "Sunny Arokia Swamy Bellary",
+          "Neha Prakash"
+        ]
+      }
     ]
   },
   {
@@ -262,7 +430,10 @@
     "kind": "plenary",
     "title": "Pitch Competition",
     "sessions": [
-      { "track": "all", "text": "20–30 teams pitch to a panel of judges" }
+      {
+        "track": "all",
+        "text": "20–30 teams pitch to a panel of judges"
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -274,7 +445,14 @@
     "kind": "plenary",
     "title": "Closing Remarks & Acknowledgments",
     "sessions": [
-      { "track": "all", "text": "Closing Remarks & Acknowledgments", "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering<br>Sam Stone - IEEE Region 1 YP Coordinator" }
+      {
+        "track": "all",
+        "text": "Closing Remarks & Acknowledgments",
+        "speaker": "Philip Gonski - IEEE Region 2 Director-Elect | Director, Burns Engineering<br>Sam Stone - IEEE Region 1 YP Coordinator",
+        "speakers": [
+          "Philip Gonski"
+        ]
+      }
     ],
     "notes": "Plenary — all attendees · Colloquium Room 906"
   },
@@ -286,7 +464,11 @@
     "kind": "social",
     "title": "Optional Boston Freedom Trail Tour",
     "sessions": [
-      { "track": "all", "text": "Guided Walking Tour of the Boston Freedom Trail · $15/person (discounted group rate)", "link": "https://events.vtools.ieee.org/m/569148" }
+      {
+        "track": "all",
+        "text": "Guided Walking Tour of the Boston Freedom Trail · $15/person (discounted group rate)",
+        "link": "https://events.vtools.ieee.org/m/569148"
+      }
     ],
     "notes": ""
   }
