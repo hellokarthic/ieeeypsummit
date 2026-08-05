@@ -130,11 +130,13 @@
     transform: scale(1.08);
 }
 
+.sponsor-logo-sscs,
 .sponsor-logo-mks,
 .sponsor-logo-aess,
 .sponsor-logo-tems {
     transform: scale(0.86);
 }
+
 
 .sponsor-logo-bu {
     transform: scale(1.18);
