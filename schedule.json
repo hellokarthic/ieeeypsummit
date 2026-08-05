@@ -135,8 +135,12 @@
       },
       {
         "track": "wie",
-        "text": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption",
-        "speaker": "Moderators: Deyasini Majumdar & Maryam Alibek<br>Panelists: Jill Gostin · Michele Shindelman · Varshitha Manjunath · Vasundhara Bhupathi · Drew Lowery",
+        "text": "WIE Track: Opening Remarks & Panel",
+        "agenda": [
+          { "time": "9:45–9:50 AM", "label": "Welcome — IEEE R1-R2 WIE Coordinators", "sub": "Deyasini Majumdar & Maryam Alibek" },
+          { "time": "9:50–10:00 AM", "label": "Welcome — IEEE MGA VP", "sub": "Drew Lowery" },
+          { "time": "10:00–11:00 AM", "label": "Panel: Driving Technology & Leadership Management in the Face of Transformative Disruption", "sub": "Moderators: Deyasini Majumdar & Maryam Alibek · Panelists: Jill Gostin · Michele Shindelman · Drew Lowery · Varshitha Manjunath · Vasundhara Bhupathi" }
+        ],
         "speakers": [
           "Deyasini Majumdar",
           "Maryam Alibek",
@@ -146,7 +150,7 @@
           "Vasundhara (Vasu) Bhupathi",
           "Drew Lowery"
         ],
-        "continuesNote": "Continues through Block 2 — ends 11:30 AM"
+        "continuesNote": "Panel continues into Block 2, followed by Networking — ends 11:30 AM"
       }
     ]
   },
@@ -185,8 +189,11 @@
       },
       {
         "track": "wie",
-        "text": "WIE Panel continued from Block 1 (ends 11:30 AM)",
-        "muted": true
+        "text": "WIE Panel & Networking",
+        "agenda": [
+          { "time": "10:45–11:00 AM", "label": "Panel (continued from Block 1)" },
+          { "time": "11:00–11:30 AM", "label": "Networking" }
+        ]
       }
     ]
   },

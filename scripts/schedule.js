@@ -149,9 +149,22 @@ function renderItem(item) {
 
 function renderSessionText(session) {
   const speaker = session.speaker ? `<span class="schedule-speaker">${session.speaker}</span>` : "";
+  const agenda = session.agenda
+    ? `<div class="schedule-agenda">${session.agenda
+        .map(
+          (item) => `
+          <div class="schedule-agenda-item">
+            <span class="schedule-agenda-body">
+              <span class="schedule-agenda-label">${item.time ? `<span class="schedule-agenda-time">${item.time}</span> ` : ""}${item.label}</span>
+              ${item.sub ? `<span class="schedule-agenda-sub">${item.sub}</span>` : ""}
+            </span>
+          </div>`
+        )
+        .join("")}</div>`
+    : "";
   const continues = session.continuesNote ? `<span class="schedule-continues-tag">→ ${session.continuesNote}</span>` : "";
   const link = session.link ? `<a class="schedule-session-link" href="${session.link}" target="_blank" rel="noopener">Sign up →</a>` : "";
-  return `<span class="schedule-text">${session.text}</span>${speaker}${continues}${link}`;
+  return `<span class="schedule-text">${session.text}</span>${speaker}${agenda}${continues}${link}`;
 }
 
 // All event times are Eastern (America/New_York); compare against Eastern "now"
