@@ -46,13 +46,17 @@
             display: none;
             position: absolute;
             right: 0;
-            top: calc(100% + 6px);
+            top: 100%;
+            padding-top: 6px;
             min-width: 210px;
+            background: transparent;
+            z-index: 100;
+        }
+        .dropdown-content-inner {
             background: white;
             border-radius: 8px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.14);
             overflow: hidden;
-            z-index: 100;
         }
         .dropdown-content a {
             display: block;
@@ -210,8 +214,10 @@
         <div class="dropdown">
             <button class="dropbtn">Past Summits &#9662;</button>
             <div class="dropdown-content">
-                <a href="/2026/">2026 Summit</a>
-                <a href="/2025/index.html">2025 Summit</a>
+                <div class="dropdown-content-inner">
+                    <a href="/2026/">2026 Summit</a>
+                    <a href="/2025/index.html">2025 Summit</a>
+                </div>
             </div>
         </div>
     </div>
