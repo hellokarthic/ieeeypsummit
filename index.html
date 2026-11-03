@@ -5,120 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE Young Professionals Summit 2027</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <style>
-        .coming-soon-wrapper {
-            text-align: center;
-            padding: 3rem 1rem 4rem;
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1a2a3a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
-        .coming-soon-badge {
+
+        /* ── Top bar ── */
+        .topbar {
+            background: #003680;
+            padding: 0.6rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .dropdown { position: relative; display: inline-block; }
+
+        .dropbtn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.35);
+            color: white;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            padding: 0.35rem 0.85rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .dropbtn:hover { background: rgba(255,255,255,0.1); }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: calc(100% + 6px);
+            min-width: 210px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+            overflow: hidden;
+            z-index: 100;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 0.65rem 1rem;
+            color: #1a2a3a;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .dropdown-content a:hover { background: #f0f4fa; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(145deg, #003680 0%, #004f9f 55%, #0068cc 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem 4.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 15% 85%, rgba(255,255,255,0.04) 0%, transparent 50%),
+                radial-gradient(circle at 85% 15%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-logo {
+            height: 90px;
+            width: auto;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+            opacity: 0.92;
+        }
+
+        .hero-eyebrow {
             display: inline-block;
             background: #1ca64d;
             color: white;
-            font-weight: bold;
-            font-size: 0.82rem;
-            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            padding: 0.3rem 1rem;
+            padding: 0.28rem 0.9rem;
             border-radius: 20px;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
-        .coming-soon-wrapper h2 {
-            font-size: 2.4rem;
-            color: #004f9f;
-            margin: 0 0 0.5rem;
-            border: none;
-            display: block;
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 0.6rem;
+            letter-spacing: -0.01em;
         }
-        .coming-soon-wrapper .tagline {
-            color: #5f6f82;
-            font-size: 1.05rem;
-            margin: 0 auto 3rem;
-            max-width: 520px;
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.75;
+            margin-bottom: 3rem;
         }
-        .past-summits {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e0e6ef;
+
+        /* ── Info pills ── */
+        .info-pills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .info-pill {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.22);
+            border-radius: 50px;
+            padding: 0.6rem 1.4rem;
+            backdrop-filter: blur(4px);
+        }
+
+        .info-pill i {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        .info-pill span {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* ── Past summits ── */
+        .past-section {
+            max-width: 680px;
+            margin: 3.5rem auto 3rem;
+            padding: 0 1.5rem;
             text-align: center;
         }
-        .past-summits h3 {
-            color: #5f6f82;
-            font-size: 0.85rem;
+
+        .past-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 0.75rem;
+            color: #8a9aaa;
+            margin-bottom: 0.9rem;
         }
-        .past-summit-link {
-            display: inline-block;
-            margin: 0.25rem 0.4rem;
-            padding: 0.45rem 1rem;
-            border: 2px solid #004f9f;
-            border-radius: 5px;
+
+        .past-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .past-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.5rem 1.1rem;
+            border: 1.5px solid #c8d4e4;
+            border-radius: 6px;
             color: #004f9f;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-        .past-summit-link:hover {
-            background-color: #004f9f;
-            color: white;
+            font-weight: 600;
+            font-size: 0.88rem;
             text-decoration: none;
+            transition: border-color 0.15s, background 0.15s;
+        }
+        .past-link:hover {
+            border-color: #004f9f;
+            background: #f0f5ff;
+            text-decoration: none;
+        }
+        .past-link i { font-size: 0.78rem; opacity: 0.6; }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: auto;
+            background: #f0f2f5;
+            border-top: 1px solid #dde3ec;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.82rem;
+            color: #8a9aaa;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="resources/IEEEYoungProfessionalsLogoTM_RGB_Stacked.png" alt="IEEE Young Professionals logo">
-        <h1>IEEE Young Professionals Summit 2027</h1>
-        <p>Charlotte, North Carolina</p>
-    </header>
 
-    <nav>
-        <div class="nav-container" style="justify-content: flex-end;">
-            <div class="dropdown">
-                <button class="dropbtn">Past Summits &#9662;</button>
-                <div class="dropdown-content">
-                    <a href="/2026/">2026 Summit &mdash; Boston, MA</a>
-                    <a href="/2025/index.html">2025 Summit</a>
-                </div>
+    <div class="topbar">
+        <div class="dropdown">
+            <button class="dropbtn">Past Summits &#9662;</button>
+            <div class="dropdown-content">
+                <a href="/2026/">2026 Summit &mdash; Boston, MA</a>
+                <a href="/2025/index.html">2025 Summit</a>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <div class="container">
-        <div class="coming-soon-wrapper">
-            <span class="coming-soon-badge">Coming Soon</span>
-            <h2>IEEE YP Summit 2027</h2>
-            <p class="tagline">Details are being finalized. Check back soon for registration, speakers, and schedule information.</p>
-
-            <div class="event-details">
-                <div>
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <h3>When</h3>
-                    <p>August 6–7, 2027<br><small>Friday &amp; Saturday</small></p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Where</h3>
-                    <p>UNC Charlotte Center City<br>Charlotte, NC</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>Host</h3>
-                    <p>IEEE Region 3</p>
-                </div>
+    <div class="hero">
+        <img class="hero-logo" src="resources/IEEEYoungProfessionalsLogoTM_RGB_Stacked.png" alt="IEEE Young Professionals logo">
+        <div>
+            <span class="hero-eyebrow">Coming Soon</span>
+        </div>
+        <h1>IEEE YP Summit 2027</h1>
+        <p class="hero-subtitle">Details are being finalized &mdash; check back soon.</p>
+        <div class="info-pills">
+            <div class="info-pill">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 6–7, 2027</span>
+            </div>
+            <div class="info-pill">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>UNC Charlotte Center City &middot; Charlotte, NC</span>
             </div>
         </div>
+    </div>
 
-        <div class="past-summits">
-            <h3>Previous Summits</h3>
-            <a class="past-summit-link" href="/2026/">2026 &mdash; Boston, MA</a>
-            <a class="past-summit-link" href="/2025/index.html">2025 Summit</a>
+    <div class="past-section">
+        <p class="past-label">Previous Summits</p>
+        <div class="past-links">
+            <a class="past-link" href="/2026/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                2026 &mdash; Boston, MA
+            </a>
+            <a class="past-link" href="/2025/index.html">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                2025 Summit
+            </a>
         </div>
     </div>
 
     <footer>
         &copy; 2027 IEEE Young Professionals Summit
     </footer>
+
 </body>
 </html>
