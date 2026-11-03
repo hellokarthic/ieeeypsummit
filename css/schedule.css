@@ -164,6 +164,48 @@
   margin-top: 0.25rem;
 }
 
+.schedule-agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 0.35rem;
+}
+
+.schedule-agenda-item {
+  display: flex;
+  gap: 0.4rem;
+  align-items: baseline;
+}
+
+.schedule-agenda-item::before {
+  content: "·";
+  color: #862e91;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.schedule-agenda-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-agenda-time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #862e91;
+  white-space: nowrap;
+}
+
+.schedule-agenda-label {
+  font-size: 0.82rem;
+  color: #1f2f40;
+}
+
+.schedule-agenda-sub {
+  font-size: 0.75rem;
+  color: #6b7787;
+}
+
 .schedule-continues-tag {
   display: block;
   font-size: 0.78rem;
@@ -314,6 +356,126 @@
 
 .schedule-kind-parallel {
   border-left-color: #004f9f;
+}
+
+.schedule-info-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: #f4f7fb;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #3a4a5c;
+}
+
+.schedule-info-divider {
+  color: #9aa8b8;
+}
+
+.schedule-info-item a {
+  color: #004f9f;
+  text-decoration: none;
+}
+
+.schedule-info-item a:hover {
+  text-decoration: underline;
+}
+
+.schedule-floormap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.schedule-floormap-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.schedule-floormap-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2f40;
+  margin: 0;
+}
+
+.schedule-floormap-dresscode {
+  font-size: 0.88rem;
+  color: #6b7787;
+}
+
+.schedule-contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #dde3ea;
+  border-left: 4px solid #004f9f;
+  border-radius: 8px;
+  background: #f4f7fb;
+  flex-wrap: wrap;
+}
+
+.schedule-contact-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.schedule-contact-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.schedule-contact-icon {
+  font-size: 1rem;
+  color: #004f9f;
+}
+
+.schedule-contact-name {
+  font-weight: 700;
+  color: #1f2f40;
+  font-size: 0.95rem;
+}
+
+.schedule-contact-title {
+  font-size: 0.82rem;
+  color: #6b7787;
+  padding-left: 1.5rem;
+}
+
+.schedule-contact-email {
+  font-size: 0.85rem;
+  color: #004f9f;
+  text-decoration: none;
+  padding-left: 1.5rem;
+}
+
+.schedule-contact-email:hover {
+  text-decoration: underline;
+}
+
+.schedule-contact-label {
+  font-size: 0.82rem;
+  color: #6b7787;
+  font-style: italic;
+  margin-left: auto;
+}
+
+.schedule-floormap-img {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dde3ea;
+  display: block;
 }
 
 @media (max-width: 700px) {
